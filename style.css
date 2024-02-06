@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/32c47234-8398-4a4f-a6b5-6803881d38bf/eed3a573-8db7-47ca-a2ce-b511e0350439/IN-en-20240122-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-size: max(1200px, 100vw);
+    height: 85vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.566);
+}
+
+.seprater {
+    height: 7px;
+    background-color: rgba(97, 94, 94, 0.801);
+}
+
+.nav {
+    display: flex;
+    width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.nav .btn {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+    color: white;
+}
+
+.nav .btn .btn1 {
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    padding: 4px 15px;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.447);
+}
+
+.nav .btn .btn2 {
+    border: 1px solid rgba(36, 35, 35, 0.667);
+    border-radius: 3px;
+    padding: 4px 13px;
+    background-color: rgb(229, 9, 20);
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.box .nav img {
+    height: 40px;
+    padding: 25px 0px;
+}
+
+.box .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    gap: 10px;
+}
+
+.box .content .part1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: white;
+}
+
+.box .content .part2 {
+    font-size: 20px;
+    color: white;
+}
+
+.box .content .part3 {
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+}
+
+.content .content1 {
+    display: flex;
+    gap: 8px;
+}
+
+.content1 .input input {
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 3px;
+    padding: 13px 80px;
+    border-style: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.content1 .getStarted button {
+    background-color: rgb(229, 9, 20);
+    border-radius: 3px;
+    padding: 10px 20px;
+    border-style: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.first {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    margin: auto;
+    padding: 20px;
+}
+
+.first .text .text1 {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.first .text .text2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.first .img1 {
+    position: relative;
+}
+
+.first .img1 img {
+    width: 560px;
+    position: relative;
+    z-index: 10;
+}
+
+.first .img1 video {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+.secFaq {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.secFaq .faq {
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.secFaq .faq1:hover{
+    background-color: #414141;
+}
+
+.secFaq .faq1 {
+    height: 80px;
+    width: 70vw;
+    color: white;
+    font-size: 24px;
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+}
+
+.secFaq .faq1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.secFaq .faq1 svg {
+    filter: invert();
+}
+
+.footerFlex {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    gap: 10px;
+    padding: 20px;
+}
+
+.footerFlex .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+    gap: 20px;
+}
+
+.footerFlex .grid a{
+    color: white;
+    /* text-decoration: none; */
+}
+
+@media screen and (max-width: 1400px) {
+    .first{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .box .content{
+        padding: 90px;
+    }
+    .box .content .part1 {
+        font-size: 40px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .box .content .part2{
+        font-size: 15px;
+    }
+    .box .content .part3{
+        font-size: 12px;
+    }
+    .content .content1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerFlex .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+   
+}
